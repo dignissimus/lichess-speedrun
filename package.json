@@ -1,0 +1,26 @@
+{
+  "name": "lichess-speedrun",
+  "version": "1.0.0",
+  "description": "A tool to do speedruns on Lichess",
+  "scripts": {
+    "start:firefox": "web-ext run --source-dir ./extension-dist/",
+    "build": "scripts/build.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dignissimus/lichess-speedrun.git"
+  },
+  "keywords": [
+    "lichess",
+    "speedrun"
+  ],
+  "author": "Sam Ezeh",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/dignissimus/lichess-speedrun/issues"
+  },
+  "homepage": "https://github.com/dignissimus/lichess-speedrun#readme",
+  "devDependencies": {
+    "typescript": "^4.3.5"
+  }
+}
