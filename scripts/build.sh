@@ -1,1 +1,1 @@
-tsc src/*.ts
+tsc src/*.ts --outDir out
