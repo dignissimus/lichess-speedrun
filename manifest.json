@@ -4,6 +4,7 @@
   "author": "Sam Ezeh",
   "version": "1.0",
   "description": "Tool to allow users to perform speedruns on lichess",
+  "permissions": ["storage"],
   "icons":{
     "48": "icons/icon.png"  
   },

@@ -5,3 +5,4 @@ package-lock.json
 out
 src/ui/public/build/
 src/public/.DS_Store
+*.js.map
