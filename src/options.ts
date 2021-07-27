@@ -1,4 +1,4 @@
-import {browser} from  "webextension-polyfill-ts"
+import { browser } from "webextension-polyfill-ts"
 function changerating (){
   browser.storage.local.set(
     {
