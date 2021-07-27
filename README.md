@@ -8,6 +8,7 @@ This extension works by maintaining a separate rating to your normal rating on t
 Hopefully, it'll also be possible to add viewers of the user's stream to the pool of players, helping to boost engagement.
 
 # Technical stuff
+## Build instructions
 Build with
 ```bash
 npm run build
