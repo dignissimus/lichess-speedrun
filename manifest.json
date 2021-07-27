@@ -16,7 +16,7 @@
   "browser_action": {
       "default_icon": "icons/icon.png",
       "default_title": "Lichess Speedrun",
-      "default_popup": "src/popup.html",
+      "default_popup": "src/ui/public/index.html",
       "browser_style": true
   }
 }

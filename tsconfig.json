@@ -1,7 +1,3 @@
 {
-  "compilerOptions": {
-    "typeRoots": ["node_modules/@types", "node_modules/web-ext-types"],
-    "lib": ["es2015", "DOM"]
-  },
-  "include": ["src/*.ts"]
+  "include": ["src/*.ts"],
 }
