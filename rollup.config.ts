@@ -4,7 +4,7 @@ import commonjs from '@rollup/plugin-commonjs'
 
 export default [
   {
-    input: 'src/speedrun.ts',
+    input: 'src/profile.ts',
     output: {
       dir: 'out',
       format: 'cjs'
