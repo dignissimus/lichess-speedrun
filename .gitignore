@@ -3,5 +3,5 @@ node_modules
 !rollup.config.js
 package-lock.json
 out
-/public/build/
-.DS_Store
+src/ui/public/build/
+src/public/.DS_Store
