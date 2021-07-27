@@ -8,18 +8,18 @@
     "bullet": "Bullet"
   };
   let perfs: string[] = ["rapid", "blitz", "bullet"]
-  let ratings: {[perf: string]: (int | undefined)} = {}
+  let ratings: {[perf: string]: (number | undefined)} = {}
   for (let perf of perfs){
     browser.storage.local.get(perf).then(
-      function(rating){
-        ratings[perf] = rating
-      },
+      function(data){
+        ratings[perf] = data[perf]
+      }
+    ).catch(
       function(error){
         ratings[perf] = undefined
       }
     )
   }
-  console.log(ratings)
 </script>
 
 {#each perfs as perf}

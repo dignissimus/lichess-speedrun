@@ -19,5 +19,9 @@
       "default_title": "Lichess Speedrun",
       "default_popup": "src/ui/public/index.html",
       "browser_style": true
+  },
+  "options_ui": {
+    "page": "src/ui/public/options.html",
+    "browser_style": true
   }
 }

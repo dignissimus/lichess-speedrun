@@ -30,10 +30,10 @@
     "rollup-plugin-terser": "^7.0.0",
     "sass": "^1.36.0",
     "svelte": "^3.0.0",
-    "typescript": "^4.3.5",
-    "webextension-polyfill-ts": "^0.26.0"
+    "typescript": "^4.3.5"
   },
   "dependencies": {
-    "sirv-cli": "^1.0.0"
+    "sirv-cli": "^1.0.0",
+    "webextension-polyfill-ts": "^0.26.0"
   }
 }
