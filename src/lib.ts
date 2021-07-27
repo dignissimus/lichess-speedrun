@@ -1,3 +1,5 @@
+const PROFILE_BASE_URL = "https://lichess.org/@";
+
 function createPerf(perfType: PerfType, perfId: string, perfName: string): Perf {
   return {
     type: perfType,
@@ -28,4 +30,6 @@ export function getRating(perf: Perf): (number | undefined) {
  return 2; 
 }
 
-// let ratings: {[perf: string]: (number | undefined)} = {}
+export function perfPageUrl(username:string, perf: Perf): string {
+  return `${PROFILE_BASE_URL}/${username}/perf/${perf.id}`;
+}
