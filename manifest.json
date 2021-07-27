@@ -2,15 +2,21 @@
   "manifest_version": 2,
   "name": "Lichess Speedrun",
   "author": "Sam Ezeh",
-  "vesion": 1.0,
+  "version": "1.0",
   "description": "Tool to allow users to perform speedruns on lichess",
   "icons":{
-    "48": "icon.png"  
+    "48": "icons/icon.png"  
   },
   "content_scripts": [
     {
       "matches": ["https://lichess.org/*"],
-      "js": ["speedrun.js"]  
+      "js": ["out/speedrun.js"]  
     }
-  ]
+  ],
+  "browser_action": {
+      "default_icon": "icons/icon.png",
+      "default_title": "Lichess Speedrun",
+      "default_popup": "src/popup.html",
+      "browser_style": true
+  }
 }

@@ -1,1 +1,1 @@
-tsc src/*.ts --outDir out
+tsc --project tsconfig.json --outDir out
