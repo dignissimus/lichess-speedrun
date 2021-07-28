@@ -21,6 +21,5 @@ let usernameparts = usernamehash.split('#');
 let profileusername = usernameparts[0];
 
 if (username == profileusername){
-  console.log(123)
   replaceRatings()
 }
