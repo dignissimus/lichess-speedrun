@@ -69,7 +69,15 @@ export let perfs: Perf[] = [
 ]
 
 export function getRating(perf: Perf): Promise<number> {
-  return browser.storage.local.get(perf.key).then(obj => obj[perf.key]!); 
+  return browser.storage.local.get(perf.key).then(
+    obj => {
+      let result = obj[perf.key]
+      if (result === undefined){
+        throw Error("Lichess Speedrun: Data does not exist");
+      }
+      return result
+    }
+  ); 
 }
 
 export function setRating(perf: Perf, rating: number): Promise<void> {
@@ -77,7 +85,7 @@ export function setRating(perf: Perf, rating: number): Promise<void> {
 }
 
 export function displayRating(perf: Perf): Promise<string> {
-  return getRating(perf).then(rating => rating.toString()).catch(_=>"?");
+  return getRating(perf).then(rating => rating.toString()).catch(_ => "?");
 }
 
 export function perfPageUrl(username:string, perf: Perf): string {
