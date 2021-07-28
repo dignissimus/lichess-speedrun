@@ -72,8 +72,12 @@ export function getRating(perf: Perf): Promise<number> {
   return browser.storage.local.get(perf.key).then(obj => obj[perf.key]!); 
 }
 
-export function displayRating(perfType: Perf): Promise<string> {
-  return getRating(perfType).then(rating => rating.toString()).catch(_=>"?");
+export function setRating(perf: Perf, rating: number): Promise<void> {
+  return browser.storage.local.set({ [perf.key] : rating}) 
+}
+
+export function displayRating(perf: Perf): Promise<string> {
+  return getRating(perf).then(rating => rating.toString()).catch(_=>"?");
 }
 
 export function perfPageUrl(username:string, perf: Perf): string {
