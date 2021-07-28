@@ -9,7 +9,7 @@ export default [
       dir: 'out',
       format: 'cjs'
     },
-    plugins: [typescript() ]
+    plugins: [typescript(), nodeResolve(), commonjs()]
   },
     {
     input: 'src/options.ts',
@@ -18,5 +18,14 @@ export default [
       format: 'cjs'
     },
     plugins: [typescript(), nodeResolve(), commonjs()]
+  },
+  {
+    input: 'src/lib.ts',
+    output: {
+      dir: 'out',
+      format: 'cjs'
+    },
+    plugins: [typescript(), nodeResolve(), commonjs()]
   }
+
 ];
