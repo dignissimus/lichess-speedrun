@@ -12,7 +12,12 @@
     {
       "matches": ["https://lichess.org/@/*"],
       "js": ["out/profile.js"]  
+    },
+    {
+      "matches": ["https://lichess.org/"],
+      "js": ["out/lobby.js"]  
     }
+
   ],
   "browser_action": {
       "default_icon": "icons/icon.png",

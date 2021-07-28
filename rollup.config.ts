@@ -26,6 +26,15 @@ export default [
       format: 'cjs'
     },
     plugins: [typescript(), nodeResolve(), commonjs()]
+  },
+  {
+    input: 'src/lobby.ts',
+    output: {
+      dir: 'out',
+      format: 'cjs'
+    },
+    plugins: [typescript(), nodeResolve(), commonjs()]
   }
+
 
 ];
