@@ -16,7 +16,7 @@
   function displayRatings() {
     perfs.map(
       perf => displayRating(perf).then(
-        rating => { document.getElementById(perf.key)!.innerText = rating }
+        rating => { document.getElementById(perf.key)!.innerText = `Rating: ${rating.toString()}` }
       )
     )
   }
@@ -37,6 +37,6 @@
 
 {#each perfs as perf}
   <h2>{perf.name}</h2>
-  Rating: <span id="{perf.key}">?</span>
+  <span id="{perf.key}">?</span>
 {/each}
 
