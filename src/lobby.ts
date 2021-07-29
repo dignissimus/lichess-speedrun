@@ -1,26 +1,9 @@
-function pools(): HTMLElement[] {
-  return [...document.getElementsByClassName("lpools")] as HTMLElement[]
+function hidePool(){
+  let style = document.createElement("style")
+  style.innerText = ".lpools {visibility: hidden;}"
+  document.head.appendChild(style)
 }
 
-function hidePools(){
-  console.log("Making an attempt at hiding")
-  pools().map(element => (<HTMLElement>element).style.visibility = "hidden")
-}
+hidePool()
 
 
-function load(){
-  while (!pools); // Probably not a good idea
-  hidePools()
-  pools().map(pool => new MutationObserver(hidePools).observe(pool, {
-    childList: false,
-    subtree: false
-  }))
-}
-
-load()
-
-document.body.addEventListener("load", load)
-
-
-//document.body.addEventListener("load", load, true)
-// window.hidePools = hidePools
