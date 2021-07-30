@@ -1,8 +1,10 @@
-import { perfs, displayRating, getRating, setRating } from "../../../out/perfs.js"
+import { perfs } from "../../../out/perfs"
+import { displayRating, getRating, setRating } from "../../../out/rating"
 function enableExtension() {
   perfs.map(
     perf => getRating(perf).catch(
       _ => {
+        console.log("Trying to set")
         setRating(perf, 600) // TODO: Allow set to chosen default rating
         displayRatings()
       }

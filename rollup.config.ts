@@ -34,7 +34,14 @@ export default [
       format: 'cjs'
     },
     plugins: [typescript(), nodeResolve(), commonjs()]
+  },
+  {
+    input: 'src/rating.ts',
+    output: {
+      dir: 'out',
+      format: 'cjs'
+    },
+    plugins: [typescript(), nodeResolve(), commonjs()]
   }
-
 
 ];
