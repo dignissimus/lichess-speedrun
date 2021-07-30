@@ -42,6 +42,22 @@ export default [
       format: 'cjs'
     },
     plugins: [typescript(), nodeResolve(), commonjs()]
+  },
+  {
+    input: 'src/game.ts',
+    output: {
+      dir: 'out',
+      format: 'cjs'
+    },
+    plugins: [typescript(), nodeResolve(), commonjs()]
+  },
+  {
+    input: 'src/website.ts',
+    output: {
+      dir: 'out',
+      format: 'cjs'
+    },
+    plugins: [typescript(), nodeResolve(), commonjs()]
   }
 
 ];
