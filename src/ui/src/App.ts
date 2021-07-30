@@ -1,4 +1,4 @@
-import { perfs, displayRating, getRating, setRating } from "../../../out/lib.js"
+import { perfs, displayRating, getRating, setRating } from "../../../out/perfs.js"
 function enableExtension() {
   perfs.map(
     perf => getRating(perf).catch(

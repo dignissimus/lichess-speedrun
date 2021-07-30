@@ -1,5 +1,5 @@
-import Player, { Outcome } from 'glicko-two'
-import { perfs, perfPageUrl, displayRating } from './lib'
+import {displayRating } from './rating'
+import { perfs, perfPageUrl } from './perfs'
 
 let username = document.getElementById("user_tag")?.innerText || ""
 

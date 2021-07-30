@@ -68,26 +68,6 @@ export let perfs: Perf[] = [
     RacingKings,
 ]
 
-export function getRating(perf: Perf): Promise<number> {
-  return browser.storage.local.get(perf.key).then(
-    obj => {
-      let result = obj[perf.key]
-      if (result === undefined){
-        throw Error("Lichess Speedrun: Data does not exist");
-      }
-      return result
-    }
-  ); 
-}
-
-export function setRating(perf: Perf, rating: number): Promise<void> {
-  return browser.storage.local.set({ [perf.key] : rating}) 
-}
-
-export function displayRating(perf: Perf): Promise<string> {
-  return getRating(perf).then(rating => rating.toString()).catch(_ => "?");
-}
-
 export function perfPageUrl(username:string, perf: Perf): string {
   return `${PROFILE_BASE_URL}/${username}/perf/${perf.key}`;
 }

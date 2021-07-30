@@ -20,7 +20,7 @@ export default [
     plugins: [typescript(), nodeResolve(), commonjs()]
   },
   {
-    input: 'src/lib.ts',
+    input: 'src/perfs.ts',
     output: {
       dir: 'out',
       format: 'cjs'
