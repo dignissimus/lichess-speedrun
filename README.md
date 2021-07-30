@@ -11,5 +11,6 @@ Hopefully, it'll also be possible to add viewers of the user's stream to the poo
 ## Build instructions
 Build with
 ```bash
+npm install
 npm run build
 ```
