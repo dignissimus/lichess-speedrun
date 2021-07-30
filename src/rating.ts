@@ -3,6 +3,11 @@ import Player, { Match, Outcome } from 'glicko-two'
 import { Perf } from './perfs'
 // import from 'node-elo'
 
+const TAU = 0.75
+const MAX_RATING_DELTA = 700
+const MAX_VOLATILITY = 0.1
+const DEFAULT_VOLATILITY - 0.09
+
 export function getRating(perf: Perf): Promise<number> {
   return browser.storage.local.get(perf.key).then(
     obj => {
