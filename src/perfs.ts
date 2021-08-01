@@ -34,21 +34,21 @@ export type Perf = {
   name: string
 }
 
-let UltraBullet = createPerf(PerfType.UltraBullet, "ultrabullet", "UltraBullet") // TODO: Check name is correct
-let Bullet = createPerf(PerfType.Bullet, "bullet", "Bullet")
-let Blitz = createPerf(PerfType.Blitz, "blitz", "Blitz")
-let Rapid = createPerf(PerfType.Rapid, "rapid", "Rapid")
-let Classical = createPerf(PerfType.Classical, "classical", "Classical")
-let Correspondence = createPerf(PerfType.Correspondence, "correspondence", "Correspondence")
-let Standard = createPerf(PerfType.Standard, "standard", "Standard")
-let Crazyhouse = createPerf(PerfType.Crazyhouse, "crazyhouse", "Crazyhouse")
-let Chess960 = createPerf(PerfType.Chess960, "chess960", "Chess960")
-let KingOfTheHill = createPerf(PerfType.KingOfTheHill, "kingofthehill", "King Of The Hill") // Check case of name is correct
-let ThreeCheck = createPerf(PerfType.ThreeCheck, "threeCheck", "Three Check") // Check case of name is correct
-let Antichess = createPerf(PerfType.Antichess, "antichess", "Antichess")
-let Atomic = createPerf(PerfType.Atomic, "atomic", "Atomic")
-let Horde = createPerf(PerfType.Horde, "horde", "Horde")
-let RacingKings = createPerf(PerfType.RacingKings, "racingkings", "Racing Kings") // Check case of name is correct
+export let UltraBullet = createPerf(PerfType.UltraBullet, "ultrabullet", "UltraBullet") // TODO: Check name is correct
+export let Bullet = createPerf(PerfType.Bullet, "bullet", "Bullet")
+export let Blitz = createPerf(PerfType.Blitz, "blitz", "Blitz")
+export let Rapid = createPerf(PerfType.Rapid, "rapid", "Rapid")
+export let Classical = createPerf(PerfType.Classical, "classical", "Classical")
+export let Correspondence = createPerf(PerfType.Correspondence, "correspondence", "Correspondence")
+export let Standard = createPerf(PerfType.Standard, "standard", "Standard")
+export let Crazyhouse = createPerf(PerfType.Crazyhouse, "crazyhouse", "Crazyhouse")
+export let Chess960 = createPerf(PerfType.Chess960, "chess960", "Chess960")
+export let KingOfTheHill = createPerf(PerfType.KingOfTheHill, "kingofthehill", "King Of The Hill") // Check case of name is correct
+export let ThreeCheck = createPerf(PerfType.ThreeCheck, "threeCheck", "Three Check") // Check case of name is correct
+export let Antichess = createPerf(PerfType.Antichess, "antichess", "Antichess")
+export let Atomic = createPerf(PerfType.Atomic, "atomic", "Atomic")
+export let Horde = createPerf(PerfType.Horde, "horde", "Horde")
+export let RacingKings = createPerf(PerfType.RacingKings, "racingkings", "Racing Kings") // Check case of name is correct
 
 export let perfs: Perf[] = [
     UltraBullet,  

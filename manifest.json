@@ -18,8 +18,8 @@
       "js": ["out/lobby.js"]  
     },
     {
-      "matches": ["https://lichess.org/*/"],
-      "js": ["out/lobby.js"]  
+      "matches": ["https://lichess.org/*"],
+      "js": ["out/game.js"]  
     }
 
   ],
