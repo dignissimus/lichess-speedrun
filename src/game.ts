@@ -8,6 +8,10 @@ function and(...functions: ElementCondition[]){
   return function(element: HTMLAnchorElement) { return !functions.map(func => func(element)).includes(false) }
 }
 
+function not(func: ElementCondition): ElementCondition{
+  return function(element: HTMLAnchorElement){ return !func(element) }
+}
+
 function linksToUserPage(element: HTMLAnchorElement): boolean {return element.href ===`https://lichess.org/@/${getUsername()}`} 
 function isNoOpener(element: HTMLAnchorElement): boolean { return element.rel === "noopener" }
 
@@ -30,6 +34,7 @@ function updateRatingAfterGameEnd(){
   /* TODO */
 }
 
+let lichess: any;
 lichess.pubsub.on("socket.in.endData", updateRatingAfterGameEnd)
 
 replaceClockRating()
