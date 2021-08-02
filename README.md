@@ -15,7 +15,13 @@ npm install
 npm run build
 ```
 ## Testing
-1. In firefox, go to the [`about:debugging`](about:debugging) by typing it into the URL bar and pressing enter
+### Firefox
+1. In firefox, go to the [`about:debugging`](about:debugging) page by typing it into the URL bar and pressing enter
 2. Go to the `This Firefox` section and click `Load Temporary Add-on`
 3. Navigate to the folder containing the extension and select the `manifest.json` file
+The plugin should now be loaded into the browser for testing.
+### Chrome
+1. In chrome, go to [`chrome://extensions`](chrome://extensions) by typing it into the URL bar and pressing enter
+2. Turn on developer mode and click `Load unpacked`
+3. Navigate to the folder containing the extension and select it
 The plugin should now be loaded into the browser for testing.
