@@ -1,5 +1,5 @@
 <h1>Lichess Speedrun</h1>
-<button id="enable" type="button">Enable</button>
+<button id="enable" type="button" class="disabled"><span class="disabled-text">Disabled</span><span class="enabled-text">Enabled</span></button>
 
 <script lang="ts" src="App.ts"></script>
 

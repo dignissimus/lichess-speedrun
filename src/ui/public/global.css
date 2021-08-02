@@ -1,3 +1,19 @@
+button.enabled {
+  background-color: #4CAF50;
+}
+
+button.disabled span.enabled-text {
+  visibility: hidden;
+}
+
+button.enabled span.disabled-text {
+  visibility: hidden;
+}
+
+button.disabled {
+  background-color: #AF4C50
+}
+
 html, body {
 	position: relative;
 	width: 100%;
