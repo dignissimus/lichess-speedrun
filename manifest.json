@@ -2,7 +2,7 @@
   "manifest_version": 2,
   "name": "Lichess Speedrun",
   "author": "Sam Ezeh",
-  "version": "1.0",
+  "version": "0.9.0",
   "description": "Tool to allow users to perform speedruns on lichess",
   "permissions": ["storage"],
   "icons":{
