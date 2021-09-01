@@ -16,6 +16,7 @@ function linksToUserPage(element: HTMLAnchorElement): boolean {return element.hr
 function isNoOpener(element: HTMLAnchorElement): boolean { return element.rel === "noopener" }
 
 function replaceClockRating(){
+  console.log("clocking")
   let element = [...document.getElementsByTagName("a")].filter(and(linksToUserPage, isNoOpener))[0]
   let parent = element?.parentElement
   if(parent !== undefined && parent !== null){
@@ -27,7 +28,9 @@ function replaceClockRating(){
 }
 
 function replaceSideBarRating(){
-  let anchorElement = [...document.getElementsByTagName("a")].filter(and(linksToUserPage/*TODO: finish off*/))
+  console.log("trying hard")
+  let anchorElement = [...document.getElementsByTagName("a")].filter(and(linksToUserPage, isNoOpener))
+  anchorElement.map(element => element.parentElement!.querySelector('rating')!.innerHTML = "????") // TODO
 }
 
 function updateRatingAfterGameEnd(){
@@ -37,5 +40,6 @@ function updateRatingAfterGameEnd(){
 let lichess: any;
 lichess.pubsub.on("socket.in.endData", updateRatingAfterGameEnd)
 
+console.log(1)
 replaceClockRating()
 replaceSideBarRating()
