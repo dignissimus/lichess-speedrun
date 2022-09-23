@@ -1,42 +1,43 @@
 {
-  "name": "lichess-speedrun",
-  "version": "1.0.0",
-  "description": "A tool to do speedruns on Lichess",
-  "scripts": {
-    "start:firefox": "web-ext run --source-dir ./extension-dist/",
-    "build": "scripts/build.sh"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/dignissimus/lichess-speedrun.git"
-  },
-  "keywords": [
-    "lichess",
-    "speedrun"
-  ],
-  "author": "Sam Ezeh",
-  "license": "GPL-3.0-or-later",
-  "bugs": {
-    "url": "https://github.com/dignissimus/lichess-speedrun/issues"
-  },
-  "homepage": "https://github.com/dignissimus/lichess-speedrun#readme",
-  "devDependencies": {
-    "@rollup/plugin-commonjs": "^17.0.0",
-    "@rollup/plugin-node-resolve": "^11.2.1",
-    "@rollup/plugin-typescript": "^8.2.3",
-    "rollup": "^2.54.0",
-    "rollup-plugin-css-only": "^3.1.0",
-    "rollup-plugin-livereload": "^2.0.0",
-    "rollup-plugin-svelte": "^7.0.0",
-    "rollup-plugin-terser": "^7.0.0",
-    "sass": "^1.36.0",
-    "svelte": "^3.0.0",
-    "typescript": "^4.3.5",
-    "ui": "./src/ui"
-  },
+  "name": "lichess-speedrun2",
+  "version": "0.1.0",
+  "private": true,
   "dependencies": {
-    "glicko-two": "^1.3.1",
-    "sirv-cli": "^1.0.0",
-    "webextension-polyfill-ts": "^0.26.0"
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "@types/jest": "^27.5.2",
+    "@types/node": "^16.11.59",
+    "@types/react": "^18.0.21",
+    "@types/react-dom": "^18.0.6",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-scripts": "5.0.1",
+    "typescript": "^4.8.3",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }

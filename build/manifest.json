@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "short_name": "Lichess speedrun",
+  "name": "Lichess speedrun",
+  "author": "Sam Ezeh",
+  "version": "0.1.0",
+  "description": "Tool to allow users to perform speedruns on lichess",
+  "permissions": ["storage"],
+  "action": {
+    "default_popup": "index.html",
+    "default_title": "Lichess speedrun"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://lichess.org/@/*"],
+      "js": ["./static/js/"]
+    }
+  ]
+}
