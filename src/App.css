@@ -22,16 +22,14 @@ h1 {
 }
 
 h2 {
-    font-size: 15px;
+  font-size: 15px;
 }
 
 a {
   color: #61dafb;
 }
 
-h2
-
-.perf-list {
+h2 .perf-list {
   display: flex;
   flex-direction: column;
   margin-left: 20px;

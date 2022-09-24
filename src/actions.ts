@@ -4,7 +4,7 @@ export function readPerfEntries() {
   return [
     {
       perf: {
-        "key": PerfKey.Rapid,
+        key: PerfKey.Rapid,
         display: "Rapid",
         name: "rapid",
       },
@@ -12,3 +12,6 @@ export function readPerfEntries() {
     },
   ];
 }
+
+export const getRating = (key: string) => "1500";
+export const getEnabled = () => true;
